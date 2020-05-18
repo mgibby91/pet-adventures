@@ -1,0 +1,482 @@
+:root {
+  --primary-color: #4d6d9a;
+  --secondary-color: #86b3d1;
+  --third-color: #99ced3;
+  --fourth-color: #edb5bf;
+  --dark-color: #444;
+  --light-color: #f4f4f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  background: var(--light-color);
+}
+
+
+/* ************************************* */
+/* UTILITY SECTION */
+/* ************************************* */
+
+
+.btn-1 {
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.7rem 2.25rem;
+  border: 1.25px solid var(--primary-color);
+  border-radius: 5px;
+  transition: 0.25s;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-1:hover {
+  color: var(--primary-color);
+  background: #fff;
+}
+
+.btn-2 {
+  text-decoration: none;
+  color: #fff;
+  background: var(--secondary-color);
+  padding: 0.7rem 2.25rem;
+  border: 1.25px solid var(--secondary-color);
+  border-radius: 5px;
+  transition: 0.25s;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-2:hover {
+  color: var(--secondary-color);
+  background: #fff;
+}
+
+.btn-3 {
+  text-decoration: none;
+  color: #fff;
+  background: var(--third-color);
+  padding: 0.7rem 2.25rem;
+  border: 1.25px solid var(--third-color);
+  border-radius: 5px;
+  transition: 0.25s;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-3:hover {
+  color: var(--third-color);
+  background: #fff;
+}
+
+.btn-4 {
+  text-decoration: none;
+  color: #fff;
+  background: var(--fourth-color);
+  padding: 0.7rem 2.25rem;
+  border: 1.25px solid var(--fourth-color);
+  border-radius: 5px;
+  transition: 0.25s;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-4:hover {
+  color: var(--fourth-color);
+  background: #fff;
+}
+
+
+.profile-pic-1 {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: url('./img/01-dog-profile.jpeg') no-repeat center center/cover;
+}
+
+.profile-pic:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+.profile-pic-2 {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: url('./img/02-dog-profile.jpeg') no-repeat center center/cover;
+}
+
+.profile-pic-3 {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: url('./img/03-dog-profile.jpeg') no-repeat center center/cover;
+}
+
+.profile-pic-4 {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: url('./img/04-dog-profile.jpeg') no-repeat center center/cover;
+}
+
+
+
+/* ************************************* */
+/* NAVBAR SECTION */
+/* ************************************* */
+
+
+/* Navbar Home Logo (left side) */
+nav {
+  /* height: 70px; */
+  background: var(--dark-color);
+}
+
+nav .nav-container {
+  max-width: 1100px;
+  padding: 15px 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-container .logo-home a {
+  font-size: 2.0rem;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  color: var(--light-color);
+}
+
+nav .nav-container .logo-home a:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+nav .nav-container .logo-home i {
+  padding-right: 5px;
+}
+
+
+/* Navbar Menu Items (right side) */
+nav .nav-container .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .nav-container .menu ul li {
+  list-style: none;
+}
+
+nav .nav-container .menu ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--light-color);
+  padding: 0.25rem 0.1rem;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+}
+
+nav .nav-container .menu ul li a:hover {
+  color: var(--light-color);
+}
+
+nav .nav-container .menu ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.25s ease-in-out 0s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-container .menu ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+
+/* ************************************* */
+/* SHOWCASE SECTION */
+/* ************************************* */
+
+
+#showcase {
+  position: relative;
+  height: 92vh;
+}
+
+#showcase:before {
+  content: '';
+  background: url('./img/01-dog-showcase.jpeg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#showcase .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+#showcase .container .showcase-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 60vh;
+}
+
+#showcase .container .showcase-container h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+#showcase .container .showcase-container h2 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  padding-bottom: 2.5rem;
+  z-index: 1;
+}
+
+#showcase .container .showcase-container p {
+  padding-bottom: 1.75rem;
+  z-index: 1;
+}
+
+#showcase .container .showcase-container a {
+  text-decoration: none;
+  color: var(--light-color);
+  background: var(--primary-color);
+  padding: 0.7rem 2.25rem;
+  border: 1.25px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+#showcase .container .showcase-container a:hover {
+  color: var(--primary-color);
+  background: var(--light-color);
+  transition: 0.25s;
+}
+
+
+/* ************************************* */
+/* BLOG-POSTS SECTION */
+/* ************************************* */
+
+#blog-posts {
+  padding: 1rem;
+}
+
+#blog-posts h1 {
+  margin: auto;
+  max-width: 1100px;
+  padding: 0.5rem 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#blog-posts .blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'post-1 post-1 post-2'
+    'post-3 post-4 post-2'
+    'post-5 post-6 post-6'
+    'post-5 post-7 post-8';
+  grid-gap: 1rem;
+  margin: auto;
+  max-width: 1100px;
+  height: 125vh;
+  font-size: 0.8rem;
+}
+
+#blog-posts .blog-container .post {
+  padding: 1rem;
+  background: #fff;
+  text-align: justify;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+#blog-posts .blog-container .top-container img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#blog-posts .blog-container .top-container .date {
+  font-size: 1.4rem;
+}
+
+#blog-posts .blog-container p {
+  padding-bottom: 1.5rem;
+}
+
+
+/* NO-SPAN (1 x 1) grid areas */
+#blog-posts .blog-container .top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+
+/* SPAN 2 (across column) grid areas */
+#blog-posts .blog-container .span-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+
+#blog-posts .blog-container .post-1.span-col-2 .right-container {
+  background: url('./img/07-dog-showcase.jpeg') no-repeat center center/cover;
+}
+
+#blog-posts .blog-container .post-6.span-col-2 .right-container {
+  background: url('./img/08-dog-showcase.jpeg') no-repeat center center/cover;
+}
+
+#blog-posts .blog-container .span-col-2 .right-container,
+#blog-posts .blog-container .span-row-2 .right-container {
+  margin: 1.75rem;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* SPAN 2(across row) grid areas */
+#blog-posts .blog-container .span-row-2 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+#blog-posts .blog-container .post-2.span-row-2 .right-container {
+  background: url('./img/09-dog-showcase.jpeg') no-repeat center center/cover;
+}
+
+#blog-posts .blog-container .post-5.span-row-2 .right-container {
+  background: url('./img/10-dog-showcase.jpeg') no-repeat center center/cover;
+}
+
+
+/* Modal-1 */
+#modal-1 {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#modal-1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#modal-1 .modal {
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: .2s;
+}
+
+#modal-1:target .modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.modal {
+  z-index: 2;
+  background-color: white;
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#blog-posts .blog-container .post-1 {
+  grid-area: post-1;
+}
+#blog-posts .blog-container .post-2 {
+  grid-area: post-2;
+}
+#blog-posts .blog-container .post-3 {
+  grid-area: post-3;
+}
+#blog-posts .blog-container .post-4 {
+  grid-area: post-4;
+}
+#blog-posts .blog-container .post-5 {
+  grid-area: post-5;
+}
+#blog-posts .blog-container .post-6 {
+  grid-area: post-6;
+}
+#blog-posts .blog-container .post-7 {
+  grid-area: post-7;
+}
+#blog-posts .blog-container .post-8 {
+  grid-area: post-8;
+}
+
+
+
