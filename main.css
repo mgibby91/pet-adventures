@@ -138,6 +138,10 @@ html, body {
 nav {
   /* height: 70px; */
   background: var(--dark-color);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  overflow: auto;
 }
 
 nav .nav-container {
@@ -223,6 +227,7 @@ nav .nav-container .menu ul li a:hover:before {
 #showcase {
   position: relative;
   height: 92vh;
+  width: 100%;
 }
 
 #showcase:before {
@@ -238,7 +243,7 @@ nav .nav-container .menu ul li a:hover:before {
 
 #showcase .container {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   padding: 1.5rem;
 }
 
@@ -315,9 +320,10 @@ nav .nav-container .menu ul li a:hover:before {
   grid-gap: 1rem;
   margin: auto;
   max-width: 1100px;
-  height: 125vh;
+  height: 160vh;
   font-size: 0.8rem;
 }
+
 
 #blog-posts .blog-container .post {
   padding: 1rem;
@@ -360,18 +366,35 @@ nav .nav-container .menu ul li a:hover:before {
 }
 
 
-#blog-posts .blog-container .post-1.span-col-2 .right-container {
+#blog-posts .blog-container .post-1.span-col-2 .right-container a {
   background: url('./img/07-dog-showcase.jpeg') no-repeat center center/cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
 }
 
-#blog-posts .blog-container .post-6.span-col-2 .right-container {
+#blog-posts .blog-container .post-1.span-col-2 .right-container a:hover {
+  transform: translateY(-7px);
+}
+
+#blog-posts .blog-container .post-6.span-col-2 .right-container a {
   background: url('./img/08-dog-showcase.jpeg') no-repeat center center/cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+#blog-posts .blog-container .post-6.span-col-2 .right-container a:hover {
+  transform: translateY(-7px);
 }
 
 #blog-posts .blog-container .span-col-2 .right-container,
 #blog-posts .blog-container .span-row-2 .right-container {
   margin: 1.75rem;
-  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* SPAN 2(across row) grid areas */
@@ -381,102 +404,166 @@ nav .nav-container .menu ul li a:hover:before {
   grid-gap: 2rem;
 }
 
-#blog-posts .blog-container .post-2.span-row-2 .right-container {
+#blog-posts .blog-container .post-2.span-row-2 .right-container a {
+  background: url('./img/09-dog-showcase.jpeg') no-repeat center center/cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+#blog-posts .blog-container .post-2.span-row-2 .right-container a:hover {
+  transform: translateY(-7px);
+}
+
+
+#blog-posts .blog-container .post-5.span-row-2 .right-container a {
+  background: url('./img/10-dog-showcase.jpeg') no-repeat center center/cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+#blog-posts .blog-container .post-5.span-row-2 .right-container a:hover {
+  transform: translateY(-7px);
+}
+
+#blog-posts .blog-container .post-1 {grid-area: post-1;}
+#blog-posts .blog-container .post-2 {grid-area: post-2;}
+#blog-posts .blog-container .post-3 {grid-area: post-3;}
+#blog-posts .blog-container .post-4 {grid-area: post-4;}
+#blog-posts .blog-container .post-5 {grid-area: post-5;}
+#blog-posts .blog-container .post-6 {grid-area: post-6;}
+#blog-posts .blog-container .post-7 {grid-area: post-7;}
+#blog-posts .blog-container .post-8 {grid-area: post-8;}
+
+
+/* ************************************* */
+/* MODALS SECTION */
+/* ************************************* */
+
+/* MODAL UTILITIES */
+.modal-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  opacity:0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modal-box:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: var(--secondary-color);
+}
+
+/* Post 1 Modal */
+.modal-box .post-1-close {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: url('./img/07-dog-showcase.jpeg') no-repeat center center/cover;
+}
+
+/* Post 2 Modal */
+.modal-box .post-2-close {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
   background: url('./img/09-dog-showcase.jpeg') no-repeat center center/cover;
 }
 
-#blog-posts .blog-container .post-5.span-row-2 .right-container {
+/* Post 5 Modal */
+.modal-box .post-5-close {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
   background: url('./img/10-dog-showcase.jpeg') no-repeat center center/cover;
 }
 
-
-/* Modal-1 */
-#modal-1 {
-  visibility: hidden;
-  opacity: 0;
-  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+/* Post 6 Modal */
+.modal-box .post-6-close {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: url('./img/08-dog-showcase.jpeg') no-repeat center center/cover;
 }
 
-#modal-1:target {
-  visibility: visible;
-  opacity: 1;
+
+
+/* ************************************* */
+/* FOOTER SECTION */
+/* ************************************* */
+
+
+footer {
+  background: var(--dark-color);
 }
 
-#modal-1 .modal {
-  opacity: 0;
-  transform: translateY(-1rem);
-  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-delay: .2s;
-}
-
-#modal-1:target .modal {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+footer .footer-container {
+  max-width: 1100px;
+  padding: 15px 20px;
+  margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  color: var(--light-color);
 }
 
-.modal-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .2);
+footer .footer-container .footer-logo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05rem;
 }
 
-.modal {
-  z-index: 2;
-  background-color: white;
-  width: 80%;
-  max-width: 500px;
-  padding: 1rem;
-  border-radius: 8px;
+footer .footer-container .footer-logo i {
+  padding-right: 5px;
+  font-size: 2.0rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-#blog-posts .blog-container .post-1 {
-  grid-area: post-1;
-}
-#blog-posts .blog-container .post-2 {
-  grid-area: post-2;
-}
-#blog-posts .blog-container .post-3 {
-  grid-area: post-3;
-}
-#blog-posts .blog-container .post-4 {
-  grid-area: post-4;
-}
-#blog-posts .blog-container .post-5 {
-  grid-area: post-5;
-}
-#blog-posts .blog-container .post-6 {
-  grid-area: post-6;
-}
-#blog-posts .blog-container .post-7 {
-  grid-area: post-7;
-}
-#blog-posts .blog-container .post-8 {
-  grid-area: post-8;
+footer .footer-container .footer-logo p {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
+footer .footer-container .socials a {
+  color: var(--secondary-color);
+  padding: 0 4px;
+}
 
 
