@@ -1,3 +1,8 @@
+
+/* ************************************* */
+/* HOME PAGE MOBILE */
+/* ************************************* */
+
 nav .nav-container {
   flex-direction: column;
 }
@@ -7,7 +12,7 @@ nav .nav-container .logo-home {
 }
 
 #showcase .container .showcase-container {
-  margin-top: 50px;
+  margin-top: 170px;
 }
 
 #blog-posts .blog-container {
@@ -46,4 +51,43 @@ footer .footer-container {
 
 footer .footer-container .footer-center {
   padding: 10px 0;
+}
+
+
+/* ************************************* */
+/* PROFILES PAGE MOBILE */
+/* ************************************* */
+
+.profile-title {
+  padding-top: 150px;
+}
+
+#profile-cards .profile-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-right: 18px;
+}
+
+
+/* ************************************* */
+/* CONTACT PAGE MOBILE */
+/* ************************************* */
+
+#blog-posts-title {
+  padding-top: 150px;
+}
+
+
+#contact-form {
+  padding-top: 130px;
+}
+
+
+
+/* ************************************* */
+/* POSTS PAGE MOBILE */
+/* ************************************* */
+
+#posts .posts-container .blog-post {
+  grid-template-columns: repeat(1, 1fr);
 }

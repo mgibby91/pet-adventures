@@ -1,0 +1,183 @@
+
+/* Blog Post Utilities */
+#blog-posts-title {
+  padding:100px 0 10px 40px;
+  max-width: 1100px;
+  margin: auto;
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+
+#posts .posts-container {
+  margin: auto;
+  max-width: 1100px;
+  padding: 0px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+#posts .posts-container .blog-post {
+  background: #fff;
+  text-align: justify;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+#posts .posts-container .blog-post .profile-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+#posts .posts-container .blog-post .profile-date-container .date {
+  font-size: 1.5rem;
+}
+
+#posts .posts-container .blog-post .text-container {
+  padding: 1rem;
+}
+
+
+/************************ ITALICS p-tags **************************/
+
+/* Styled p tag with italics */
+#posts .posts-container .blog-1 .text-container p:nth-child(6) {
+  font-style: italic;
+}
+
+/******************************************************************/
+
+
+#posts .posts-container .blog-post .pics-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#posts .posts-container .blog-post .blog-pic {
+  width: 80%;
+  height: 200px;
+  margin: 1.5rem 0;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/* May 12/2020 Post - Post 1 */
+#posts .posts-container .blog-post.blog-1 .pic-1 img {
+  /* background: url('../img/black-pug-01.jpeg') no-repeat center center/cover; */
+  height: 200px;
+  width: 100%;
+}
+
+#posts .posts-container .blog-post.blog-1 .pic-2 {
+  background: url('../img/black-pug-02.jpeg') no-repeat center center/cover;
+}
+
+#posts .posts-container .blog-post.blog-1 .pic-3 {
+  background: url('../img/black-pug-03.jpeg') no-repeat center center/cover;
+  height: 350px;
+}
+
+
+/* May 05/2020 Post - Post 2 */
+#posts .posts-container .blog-post.blog-2 .pic-1 {
+  background: url('../img/brown-01.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+#posts .posts-container .blog-post.blog-2 .pic-2 {
+  background: url('../img/brown-02.jpeg') no-repeat center center/cover;
+  height: 300px;
+}
+
+
+/* April/2020 Post - Post 3 */
+#posts .posts-container .blog-post.blog-3 .pic-1 {
+  background: url('../img/border-01.jpeg') no-repeat center center/cover;
+  height: 300px;
+}
+
+#posts .posts-container .blog-post.blog-3 .pic-2 {
+  background: url('../img/border-02.jpeg') no-repeat center center/cover;
+}
+
+
+/* April 27/2020 Post - Post 4 */
+#posts .posts-container .blog-post.blog-4 .pic-1 {
+  background: url('../img/yellow-01.jpeg') no-repeat center center/cover;
+}
+
+#posts .posts-container .blog-post.blog-4 .pic-2 {
+  background: url('../img/yellow-02.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+#posts .posts-container .blog-post.blog-4 .pic-3 {
+  background: url('../img/yellow-03.jpeg') no-repeat center center/cover;
+}
+
+
+/* April 18/2020 Post - Post 5 */
+#posts .posts-container .blog-post.blog-5 .pic-1 {
+  background: url('../img/brown-03.jpeg') no-repeat center center/cover;
+}
+
+#posts .posts-container .blog-post.blog-5 .pic-2 {
+  background: url('../img/brown-04.jpeg') no-repeat center center/cover;
+}
+
+#posts .posts-container .blog-post.blog-5 .pic-3 {
+  background: url('../img/brown-05.jpeg') no-repeat center center/cover;
+}
+
+#posts .posts-container .blog-post.blog-5 .pic-4 {
+  background: url('../img/brown-06.jpeg') no-repeat center center/cover;
+}
+
+
+/* April 15/2020 Post - Post 6 */
+#posts .posts-container .blog-post.blog-6 .pic-1 {
+  background: url('../img/border-03.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+#posts .posts-container .blog-post.blog-6 .pic-2 {
+  background: url('../img/border-04.jpeg') no-repeat center center/cover;
+}
+
+#posts .posts-container .blog-post.blog-6 .pic-3 {
+  background: url('../img/border-05.jpeg') no-repeat center center/cover;
+  height: 300px;
+}
+
+
+/* April 08/2020 Post - Post 7 */
+#posts .posts-container .blog-post.blog-7 .pic-1 {
+  background: url('../img/black-pug-04.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+#posts .posts-container .blog-post.blog-7 .pic-2 {
+  background: url('../img/black-pug-05.jpeg') no-repeat center center/cover;
+  height: 300px;
+}
+
+
+/* March 27/2020 Post - Post 8 */
+#posts .posts-container .blog-post.blog-8 .pic-1 {
+  background: url('../img/brown-07.jpeg') no-repeat center center/cover;
+  height: 250px;
+}
+
+#posts .posts-container .blog-post.blog-8 .pic-2 {
+  background: url('../img/brown-08.jpeg') no-repeat center center/cover;
+  height: 250px;
+}

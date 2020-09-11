@@ -1,0 +1,112 @@
+
+.profile-title {
+  padding:100px 0 10px 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+
+#profile-cards {
+  background: var(--light-color);
+}
+
+#profile-cards .profile-container {
+  max-width: 1100px;
+  padding: 0 0 100px 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+
+#profile-cards .profile-container .profile {
+  padding: 1rem;
+  background: #fff;
+  text-align: justify;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#profile-cards .profile-container .profile.profile-1 .top-container {
+  background: url('../img/01-dog-profile.jpeg') no-repeat center center/cover;
+  height: 350px;
+  width: 80%;
+  margin: 1rem 0;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#profile-cards .profile-container .profile.profile-2 .bottom-container {
+  background: url('../img/02-dog-profile.jpeg') no-repeat center center/cover;
+  height: 350px;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+#profile-cards .profile-container .profile.profile-3 .top-container {
+  background: url('../img/03-dog-profile.jpeg') no-repeat center center/cover;
+  height: 350px;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+#profile-cards .profile-container .profile.profile-4 .bottom-container {
+  background: url('../img/04-dog-profile.jpeg') no-repeat center center/cover;
+  height: 350px;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+#profile-cards .profile-container .profile .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  width: 250px;
+  margin: 1rem auto 1.5rem auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
+/************************ BOLD AND UNDERLINE p-tags **************************/
+
+/* Styled underline text decoration*/
+#profile-cards .profile-container .profile .info-container > p {
+  text-decoration: underline;
+}
+
+/* Styled bold text for name of dog */
+#profile-cards .profile-container .profile .info-container p:first-child {
+  font-weight: bold;
+}
+
+/*******************************************************************************/
+
+
+#profile-cards .profile-container .profile.profile-1 .info-container {background: var(--primary-color);}
+#profile-cards .profile-container .profile.profile-2 .info-container {background: var(--secondary-color);}
+#profile-cards .profile-container .profile.profile-3 .info-container {background: var(--third-color);}
+#profile-cards .profile-container .profile.profile-4 .info-container {background: var(--fourth-color);}
+
+#profile-cards .profile-container .profile .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem 0 0.9rem;
+}
+
+#profile-cards .profile-container .profile .socials i {
+  padding: 0 0.3rem;
+}
+
+#profile-cards .profile-container .profile.profile-1 .socials i {color: var(--primary-color);}
+#profile-cards .profile-container .profile.profile-2 .socials i {color: var(--secondary-color);}
+#profile-cards .profile-container .profile.profile-3 .socials i {color: var(--third-color);}
+#profile-cards .profile-container .profile.profile-4 .socials i {color: var(--fourth-color);}
