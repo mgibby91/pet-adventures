@@ -19,17 +19,17 @@ Or, fork this repo, clone onto your machine and open the `index.html` file in yo
 
 **Landing page!**
 
-![Screenshot of landing page]()
+![Screenshot of landing page](https://github.com/mgibby91/pet-adventures/blob/master/img/pa-landing.png?raw=true)
 
 **Read the Editor's Picks!**
 
-![Screenshot of editor's picks]()
+![Screenshot of editor's picks](https://github.com/mgibby91/pet-adventures/blob/master/img/pa-editors.png?raw=true)
 
 **Blog posts page!**
 
-![Screenshot of blog posts]()
+![Screenshot of blog posts](https://github.com/mgibby91/pet-adventures/blob/master/img/pa-blog.png?raw=true)
 
 **Check out the blog writer's profiles!**
 
-![Screenshot of profiles]()
+![Screenshot of profiles](https://github.com/mgibby91/pet-adventures/blob/master/img/pa-profiles.png?raw=true)
 
